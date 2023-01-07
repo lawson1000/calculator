@@ -10,41 +10,49 @@
     <style> @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap'); </style><style> @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap'); </style>
 </head>
 <body>
+    <div >
+        <input type="text"><br>
+        <input type="text" >
+    </div>
     <div class="main-container">
         <div class="calculator">
             <div class="screen">
-                <input type="text">
+                <input type="text" id="displayAnswer" disabled><br>
+            </div>
+            <div class="screen">
+                <input type="text" id="displayNumber">
             </div>
             <div class="buttons btn1">
-                <button class="btn-special">C</button>
+                <button id="cancel" class="btn-special">C</button>
                 <button class="btn-special">+/-</button>
-                <button class="btn-special">%</button>
-                <button class="btn-right">/</button>
+                <button id="percentage" class="btn-special">%</button>
+                <button id="division" class="btn-right">/</button>
             </div>
             <div class="buttons btn2">
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button class="btn-right">x</button>
+                <button id="seven" onclick="seven()">7</button>
+                <button id="eight" onclick="eight()">8</button>
+                <button id="nine" onclick="nine()">9</button>
+                <button id="multiply" class="btn-right" onclick="multiply()">x</button>
             </div>
             <div class="buttons btn3">
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button class="btn-right">-</button>
+                <button id="four" onclick="four()">4</button>
+                <button id="five" onclick="five()">5</button>
+                <button id="six" onclick="six()">6</button>
+                <button id="subtraction" class="btn-right" onclick="subtraction()">-</button>
             </div>
             <div class="buttons btn4">
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button class="btn-right">+</button>
+                <button id="one" onclick="one()">1</button>
+                <button id="two" onclick="two()">2</button>
+                <button id="three" onclick="three()">3</button>
+                <button id="addition" class="btn-right" onclick="addition()">+</button>
             </div>
             <div class="buttons btn4">
-                <button class="zero">0</button>
-                <button>.</button>
-                <button id="equalto" class="btn-right">=</button>
+                <button id="zero" class="zero" onclick="zero()">0</button>
+                <button id="fullStop" onclick="fullStop()">.</button>
+                <button id="equalTo" class="btn-right" onclick="equalTo()">=</button>
             </div>
         </div>
     </div>
+    <script src="main.js"></script>
 </body>
 </html>
