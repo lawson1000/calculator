@@ -38,6 +38,7 @@ body{
     border: none;
     text-align: right;
     font-size: 25px;
+    font-family: 'Open Sans','Poppins','Montserrat',sans-serif;
 }
 .buttons{
     padding: 5px 15px;
@@ -48,14 +49,28 @@ button{
     outline: 0;
     width: 60px;
     height: 60px;
-    color: black;
-    border-radius: 10px;
+    font-family:'Montserrat', 'Open Sans',sans-serif; ;
+    color: white;
+    border-radius: 50%;
     font-size: 30px;
     box-shadow: -8px -8px 15px rgba(255,255,255,0.1),5px 5px 15px rgba(0,0,0,0.2);
-    background: transparent;
+    background: #130f40;
     cursor: pointer;
     margin:10px;
 }
-#equalto{
+.zero{
     width: 40%;
+    border-radius: 30px;
+}
+/* #equalto{
+    width: 40%;
+} */
+
+.btn-right{
+    color: white;
+    background-color: #f0932b;
+}
+.btn-special{
+    color: black;
+    background-color: #7f8fa6;
 }
