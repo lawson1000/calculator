@@ -59,17 +59,11 @@ function division(){
     document.getElementById("displayNumber").value += division;
 }
 function percentage(){ 
-    try{
     var percentage = document.getElementById("displayNumber").value
     var nanCatch = document.getElementById("displayAnswer").value =Number(percentage)/100
     if (isNaN(nanCatch)){
         document.getElementById("displayAnswer").value = "No Operands allowed"
     }
-    }
-    catch{
-        
-    }
-
 } 
 
 function cancel(){
@@ -92,12 +86,4 @@ function equalTo(){
         document.getElementById("displayAnswer").value = "Error!"
     }
 }
-
-
-// var element=document.getElementById("displayNumber");
-//   if (/[+-\/*]/.test(this.value) && /[+-\/*]$/.test(element.innerHTML)) {
-//     element.innerHTML = element.innerHTML.replace(element.innerHTML[element.innerHTML.length - 1], '');
-//   }
-
-
 

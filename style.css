@@ -16,10 +16,24 @@ body{
 }
 
 .calculator{
+    position: relative;
     background-color: white;
     padding: 20px;
     border-radius: 30px;
+    box-shadow: 0 0 30px #b33939;
+    animation-duration: 3s;
+    animation-name: slidein;
+    
 }
+@keyframes slidein {
+    from {
+      bottom: 100%;
+    }
+  
+    to {
+      bottom: 0%;
+    }
+  }
 
 .screen{
     width: 100%;
@@ -46,7 +60,7 @@ body{
     height: 100%;
     width: 80%;
     border: none;
-    padding-top: 5%;
+    padding-top: 2%;
     padding-bottom: 1%;
     outline: none;
     text-align: right;
@@ -98,3 +112,27 @@ button:hover{
 .btn1 button .icon{
     font-size: 25px;
 }
+
+/* .toggler{
+    position: absolute;
+    top: 20px; 
+    left: 20px;
+    height: 20px;
+    width: 40px;
+    background-color: lightblue;
+    border-radius: 50px;
+    cursor: pointer;
+    z-index:1 ;
+}
+.toggler::after{
+    content: '';
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background-color:white;
+    z-index: -1;
+}
+ */
