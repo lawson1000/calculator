@@ -14,14 +14,14 @@
     <div class="main-container">
         <div class="calculator">
             <div class="screen">
-                <input type="text" id="displayAnswer" disabled><br>
+                <input type="text" id="displayNumber" placeholder="0">
             </div>
             <div class="screen">
-                <input type="text" id="displayNumber" placeholder="0">
+                <input type="text" id="displayAnswer" disabled><br>
             </div>
             <div class="buttons btn1">
                 <button id="cancel" class="btn-special" onclick="cancel()">C</button>
-                <button class="btn-special"  onclick="backspace()"><i class="fa-solid fa-delete-left" ></i></button>
+                <button class="btn-special"  onclick="backspace()"><i class="fa-solid fa-delete-left icon" ></i></button>
                 <button id="percentage" class="btn-special" onclick="percentage()">%</button>
                 <button id="division" class="btn-right" onclick="division()">/</button>
             </div>
@@ -43,7 +43,7 @@
                 <button id="three" onclick="three()">3</button>
                 <button id="addition" class="btn-right" onclick="addition()">+</button>
             </div>
-            <div class="buttons btn4">
+            <div class="buttons btn5">
                 <button id="zero" class="zero" onclick="zero()">0</button>
                 <button id="fullStop" onclick="fullStop()">.</button>
                 <button id="equalTo" class="btn-right" onclick="equalTo()">=</button>
