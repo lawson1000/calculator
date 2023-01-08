@@ -54,26 +54,43 @@ function multiplication(){
     var multiplication = document.getElementById("multiplication").value ="*";
     document.getElementById("displayNumber").value += multiplication;
 }
-function divison(){ 
-    var divison = document.getElementById("divison").innerHTML;
-    document.getElementById("displayNumber").value += divison;
+function division(){ 
+    var division = document.getElementById("division").innerHTML;
+    document.getElementById("displayNumber").value += division;
 }
 function percentage(){ 
-    var percentage = document.getElementById("percentage").innerHTML;
-    document.getElementById("displayNumber").value += percentage;
-}
-function equalTo(){
-    var equalTo = document.getElementById("displayNumber").value
-    document.getElementById("displayAnswer").value = eval(equalTo)
-}
+    try{
+    var percentage = document.getElementById("displayNumber").value
+    var nanCatch = document.getElementById("displayAnswer").value =Number(percentage)/100
+    if (isNaN(nanCatch)){
+        document.getElementById("displayAnswer").value = "No Operands allowed"
+    }
+    }
+    catch{
+        
+    }
+
+} 
+
 function cancel(){
     document.getElementById("displayNumber").value = ""
     document.getElementById("displayAnswer").value = ""
     document.getElementById("displayNumber").Placeholder = "0"
 }
 function backspace(){
-    var backspace = document.getElementById("displayNumber").value
-    backspace= backspace.toString().slice(0,-1);
+    var backspace = document.getElementById("displayNumber").value 
+    var newString = document.getElementById("backspace").value = backspace.toString().slice(0,-1)
+    document.getElementById("displayNumber").value = newString 
+}
+
+function equalTo(){
+    try{
+    var equalTo = document.getElementById("displayNumber").value
+    document.getElementById("displayAnswer").value = eval(equalTo)
+    }
+    catch{
+        document.getElementById("displayAnswer").value = "Error!"
+    }
 }
 
 

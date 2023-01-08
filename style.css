@@ -38,6 +38,7 @@ body{
     text-align: right;
     font-size: 25px;
     font-family: 'Poppins','Montserrat','Open Sans',sans-serif;
+    background: transparent;
 
 }
 
@@ -51,6 +52,7 @@ body{
     text-align: right;
     font-size: 25px;
     font-family: 'Open Sans','Poppins','Montserrat',sans-serif;
+    box-shadow: none;
 }
 .buttons{
     padding: 5px 15px;
@@ -69,10 +71,18 @@ button{
     background: #130f40;
     cursor: pointer;
     margin:10px;
+    
 }
+button:hover{
+    transform: scale(1.1);
+    transition: all .5s;
+}
+
 .zero{
-    width: 40%;
+    width: 143px;
     border-radius: 30px;
+    border: 0;
+    outline: 0;
 }
 
 
