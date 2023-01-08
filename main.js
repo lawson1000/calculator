@@ -51,17 +51,32 @@ function subtraction(){
     document.getElementById("displayNumber").value += subtraction;
 }
 function multiplication(){ 
-    var multiplication = document.getElementById("multiplication").innerHTML;
+    var multiplication = document.getElementById("multiplication").value ="*";
     document.getElementById("displayNumber").value += multiplication;
-}function divison(){ 
+}
+function divison(){ 
     var divison = document.getElementById("divison").innerHTML;
     document.getElementById("displayNumber").value += divison;
 }
-
+function percentage(){ 
+    var percentage = document.getElementById("percentage").innerHTML;
+    document.getElementById("displayNumber").value += percentage;
+}
 function equalTo(){
     var equalTo = document.getElementById("displayNumber").value
-    document.getElementById("displayNumber").value = eval(equalTo)
+    document.getElementById("displayAnswer").value = eval(equalTo)
 }
+function cancel(){
+    document.getElementById("displayNumber").value = ""
+    document.getElementById("displayAnswer").value = ""
+    document.getElementById("displayNumber").Placeholder = "0"
+}
+function backspace(){
+    var backspace = document.getElementById("displayNumber").value
+    backspace= backspace.toString().slice(0,-1);
+}
+
+
 // var element=document.getElementById("displayNumber");
 //   if (/[+-\/*]/.test(this.value) && /[+-\/*]$/.test(element.innerHTML)) {
 //     element.innerHTML = element.innerHTML.replace(element.innerHTML[element.innerHTML.length - 1], '');
